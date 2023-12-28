@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="icon" href="./images/6092_bookmark_favorite_rate_star_icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+                                    <!-- Bookmarker Project  -->
+
+    <div class="main-head container my-2">
+        <h1 class="my-5 text-center">Bookmarker</h1>
+        <hr>
+        <div class="form-group text-center">
+            <h2 class="py-2"><i class="fa-solid fa-bookmark icon1 me-2"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark icon2 ms-2"></i></h2>
+            <div class="input-box">
+                <div class="d-flex align-items-center justify-content-start">
+                    <i class="fa-solid fa-book-bookmark me-2 pb-1"></i>
+                    <label class="pb-2" for="inputName">Site Name</label>
+                </div>
+                <input type="text" class="form-control mb-3" id="inputName"  name="input-name" placeholder="Bookmark Name"/>
+            </div>
+            <div class="input-box">
+                <div class="d-flex align-items-center justify-content-start">
+                    <i class="fa-solid fa-link me-2 pb-1"></i>
+                    <label class="pb-2" for="inputSite"></i>Site URL</label>
+                </div>
+                <input type="text" class="form-control mb-3" id="inputSite"  name="input-site" placeholder="Website URL"/>  
+            </div>
+            <button id="btn" class="btn btn-danger px-5 my-2">submit</button>
+        </div>
+        <hr>
+
+        <div
+            class="table-responsive mt-4"
+        >
+            <table
+                class="table text-center"
+            >
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="infoTable">
+                 
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

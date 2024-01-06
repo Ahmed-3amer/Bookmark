@@ -4,8 +4,8 @@ let siteLink = document.getElementById('inputSite');
 let btn = document.getElementById('btn');
 let siteList = [];
 
-if(localStorage.getItem('list' !== null)){
-    siteList = JSON.parse(localStorage.setItem('list'))
+if(localStorage.getItem('list') !== null){
+    siteList = JSON.parse(localStorage.getItem('list'))
     display();
 }
 
